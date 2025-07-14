@@ -26,3 +26,16 @@ else
 {
     console.log ("The max Number is : ",b);
 }
+
+
+// Leap year or not
+
+const y=2024
+
+if((y % 4 === 0 && y%100!==0)||(y%400===0))
+{
+    console.log("the year: ",y,"Is a Leap Year");
+}
+else{
+    console.log("the year: ",y,"Is not a Leap Year")
+}
