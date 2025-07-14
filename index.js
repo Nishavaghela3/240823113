@@ -39,3 +39,16 @@ if((y % 4 === 0 && y%100!==0)||(y%400===0))
 else{
     console.log("the year: ",y,"Is not a Leap Year")
 }
+
+
+// sum of n numbers
+
+const n=10;
+const s=0;
+for(let i=1;i<=n;i++)
+{
+
+    s+=i;
+   
+}
+console.log(s);
