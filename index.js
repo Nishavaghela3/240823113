@@ -1,6 +1,5 @@
 console.log(" HELLO ");
 const name="NISHA";
-console.log(name);
+console.log(name,"Vaghela");
 
-// odd/even
 
