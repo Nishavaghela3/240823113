@@ -99,22 +99,37 @@
 // }
 
 //prime number 
-const num = 29;
-let isPrime = true;         
-if (num <= 1) {
-    isPrime = false;
+// const num = 29;
+// let isPrime = true;         
+// if (num <= 1) {
+//     isPrime = false;
+// }
+
+// for (let i = 2; i < num; i++) {
+//     if (num % i === 0) {
+//         isPrime = false;
+//         break;
+//     }
+// }
+
+// if (isPrime) {
+//     console.log("Prime");
+// } else {
+//     console.log("Not Prime");
+// }
+
+// count the length of the number
+
+let num = 1223634;
+let count = 0;
+
+while (num != 0) {
+    num = (num - (num % 10)) / 10;
+    count = count + 1;
 }
 
-for (let i = 2; i < num; i++) {
-    if (num % i === 0) {
-        isPrime = false;
-        break;
-    }
+if (count === 0) {
+    count = 1; // for the case when num is 0
 }
 
-if (isPrime) {
-    console.log("Prime");
-} else {
-    console.log("Not Prime");
-}
-
+console.log("Number of digits:", count);
