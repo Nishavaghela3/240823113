@@ -82,19 +82,39 @@
 
 
 //palindrome 
-let num = 121;
-let original = num;
-let reversed = 0;
+// let num = 121;
+// let original = num;
+// let reversed = 0;
 
-while (num > 0) {
-    let digit = num % 10;
-    reversed = reversed * 10 + digit;
-    num = Math.floor(num / 10);
+// while (num > 0) {
+//     let digit = num % 10;
+//     reversed = reversed * 10 + digit;
+//     num = Math.floor(num / 10);
+// }
+
+// if (original === reversed) {
+//     console.log("It is a palindrome.");
+// } else {
+//     console.log("It is not a palindrome.");
+// }
+
+//prime number 
+const num = 29;
+let isPrime = true;         
+if (num <= 1) {
+    isPrime = false;
 }
 
-if (original === reversed) {
-    console.log("It is a palindrome.");
+for (let i = 2; i < num; i++) {
+    if (num % i === 0) {
+        isPrime = false;
+        break;
+    }
+}
+
+if (isPrime) {
+    console.log("Prime");
 } else {
-    console.log("It is not a palindrome.");
+    console.log("Not Prime");
 }
 
