@@ -120,16 +120,16 @@
 
 // count the length of the number
 
-let num = 1223634;
-let count = 0;
+// let num = 1223634;
+// let count = 0;
 
-while (num != 0) {
-    num = (num - (num % 10)) / 10;
-    count = count + 1;
-}
+// while (num != 0) {
+//     num = (num - (num % 10)) / 10;
+//     count = count + 1;
+// }
 
-if (count === 0) {
-    count = 1; // for the case when num is 0
-}
+// if (count === 0) {
+//     count = 1; // for the case when num is 0
+// }
 
-console.log("Number of digits:", count);
+// console.log("Number of digits:", count);
